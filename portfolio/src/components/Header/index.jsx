@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
@@ -18,13 +19,19 @@ function index() {
        
       <div className='flex gap-4'>
         <span>
-          <FaLinkedin size="1.2rem"/>
+          <a href="https://www.linkedin.com/in/pelumi-ilupeju/" target='_blank'>
+          <FaLinkedin size="1.2rem" className=" hover:bg-violet-600"/>
+          </a>
         </span>
         <span>
-          <FaSquareTwitter size="1.2rem"/>
+          <a href="https://twitter.com/dev_ilMann" target='_blank'>
+          <FaSquareTwitter size="1.2rem" className="hover:bg-violet-600"/>
+          </a>
         </span>
         <span>
-          <FaGithub size="1.2rem"/>
+          <a href="https://github.com/mannyIlupeju" target='_blank'>
+          <FaGithub size="1.2rem" className="hover:bg-violet-600"/>
+          </a>
         </span>
       </div>
     </header>
