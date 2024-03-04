@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --white: #E8F0FF;
+  --accent: #cca5a6;
+  --green: #82caa4;
+ 
+  --purple: #6164c8;
+  --beige: #E4E6C3;
+  /* --pink: #94778B; */
+  --pink: #D40C4D;
+  --fairyTale: #FAC3DF;
+    /* --fairyTale: #D40C4D; */
+  /* --teaGreen: #48A9A6; */
+  --teaGreen: #C7D8A0;
+  --yellow: #efefbc;
+  --accent: #F4592F;
+}
+
+
+
+/*animation**/
+.bio span {
+    animation: auto-scroll 4s ease-in-out 1s infinite
+}
+
+@keyframes auto-scroll { 
+    0% {
+        transform: translateY(0);
+    }
+
+    /* 20% {
+        transform: translateY(-0em);
+    } */
+
+    40% {
+        transform: translateY(-1.1em);
+    }
+
+    /* 50% {
+        transform: translateY(-1.1em);
+    } */
+
+    60% {
+        transform: translateY(-2.1em);
+    }
+
+    /* 70%{
+        transform: translateY(-2.1em);
+    } */
+
+    80% {
+      transform: translateY(-3.1em)
+    }
+
+    90% {
+        transform: translateY(-3.1em);
+    }
+
+    100% {
+        transform: translateY(-3.1em);
+    }
+}
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=search],
+input[type = number],
+input[type=date]{
+  padding: 0.5rem;
+  border-radius: 4rem;
+  background-color: var(--teaGreen);
+  color:rgba(0, 0, 0, 0.295);
+  width:40rem;
+
+}
+
+.textInput{
+  padding: 0.5rem;
+  border-radius: 4rem;
+  background-color: var(--teaGreen);
+  color:rgba(0, 0, 0, 0.295)
+}
+
+.textInput, .formInput:focus{
+  background-color: var(--beige)
+}
+
+.formInput{
+  width: 22rem;
+  color:black;
+}
+
+textarea {
+  border-radius: 1rem;
+  background-color: var(--teaGreen);
+  padding: 0.4rem;
+  width: 40rem;
+}
+
+.projectImageBackground {
+background: rgb(104,215,84);
+background: linear-gradient(90deg, rgba(104,215,84,1) 39%, rgba(220,220,237,0.7595413165266106) 69%);
+}
+
+.navigationBackground {
+background: rgba(114, 130, 92, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
+border: 1px solid rgba(114, 130, 92, 0.3);
+
+}
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=search],
+input[type=number],
+input[type=date],
+textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem; /* More standard and visually consistent */
+  background-color: var(--teaGreen);
+  color: rgba(0, 0, 0, 0.295);
+  width: 100%; /* Ensure input fields adjust to their container's width */
+  max-width: 100%; /* Prevents input from exceeding the parent container */
+  box-sizing: border-box; /* Padding and border are included in the element's total width and height */
+}
+
+/* Media queries for specific breakpoints */
+@media (max-width: 1024px) { /* For tablets and below */
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  input[type=search],
+  input[type=number],
+  input[type=date],
+  textarea{
+    padding: 0.4rem; /* Slightly smaller padding for smaller devices */
+    border-radius: 0.4rem; /* Adjust to fit smaller screens */
+  }
+}
+
+@media (max-width: 768px) { /* For mobile devices */
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  input[type=search],
+  input[type=number],
+  input[type=date], 
+  textarea {
+    padding: 0.4rem; /* Consistent with above, consider if any further adjustments are needed */
+    /* Adjust any other properties as needed for smaller screens */
+  }
+}
