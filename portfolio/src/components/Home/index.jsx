@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function index() {
   return (
-    <div className="translate-y-20 xl:p-2 p-4">
+    <div className="translate-y-10 xl:translate-y-24 xl:p-2 p-4 text-zinc-800">
       <span>My name is Manny, i am a</span>
       <div className="flex flex-col xl:h-24 h-12 overflow-y-hidden bio">
         <span className="xl:text-8xl text-5xl">Full-Stack Developer</span>
@@ -14,7 +14,7 @@ function index() {
         <span className="xl:text-8xl text-5xl">Full-Stack Developer</span>
       </div>
       <div className="w-fit p-2">
-        <p className="lg:w-3/4 xl:text-lg text-sm">
+        <p className="lg:w-3/4 xl:text-lg text-sm leading-8">
             Motivated and data driven Full-Stack Developer committed to leveraging my technical skills and analytical mindset to drive innovation 
             and solve complex problems from businesses and individuals. With passion for continuous learning and growth, i thrive in dynamic environments where i can apply
             data-driven insights to optimize processes and enhance efficiency. 

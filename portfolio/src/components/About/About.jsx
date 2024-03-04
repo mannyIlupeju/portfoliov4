@@ -14,7 +14,7 @@ export default function About() {
     setShowSkills(false)
   }
   return (
-    <div className="translate-y-10 xl:translate-y-24 flex xl:flex-row flex-col gap-28 xl:p-2 p-4 container mx-auto mb-24">
+    <div className="translate-y-10 xl:translate-y-24 flex xl:flex-row flex-col gap-24 xl:p-2 p-4 container mx-auto mb-24 text-zinc-800">
         <div className="flex flex-col xl:w-1/2 lg:w-2/3 w-full">
             <h1 className="xl:text-8xl text-5xl">About Me</h1>
             <div className="my-4 leading-8">
@@ -25,13 +25,13 @@ export default function About() {
         <div className="xl:translate-y-10 2xl:translate-x-42 translate-x-13 w-fit mb-12">
             <div className="flex md:gap-14 gap-4 w-full cursor-pointer">
                 <span 
-                className="font-bold"
+                className={showSkills ? 'font-bold' : 'font-light'}
                 onClick={handleSkills}
                 >
                 Skills
                 </span>
                 <span 
-                className="font-bold"
+                className={showExperience ? 'font-bold' : 'font-light'}
                 onClick={handleExperience}
                 >
                 Experience

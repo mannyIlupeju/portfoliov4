@@ -10,7 +10,11 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       }
     }
-  } // plugins: [require("daisyui")],
+  },
+  daisyui: {
+    themes: ["light", "dark", "cupcake", "synthwave", "corporate", "cyberpunk"] // Add your preferred themes here
 
+  },
+  plugins: [require("daisyui")]
 };
 //# sourceMappingURL=tailwind.config.dev.js.map

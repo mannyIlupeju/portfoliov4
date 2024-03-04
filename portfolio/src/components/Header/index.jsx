@@ -9,10 +9,10 @@ function index() {
     <header className='flex md:flex-row flex-col items-center md:justify-between p-4 container mx-auto'>
     
       <Image
-        src='/3dmannylogo.gif'
+        src='/3dmannylogob:w2.gif'
         height={200}
         width={200}
-        alt='Manny Ilupeju 3d gif'
+        alt="Manny Ilupeju 3d gif"
         priority
         />
        

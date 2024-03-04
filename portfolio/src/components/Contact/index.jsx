@@ -39,7 +39,7 @@ function Contact() {
   }
 
   return (
-    <div className="translate-y-8 container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="translate-y-8 container mx-auto px-4 sm:px-6 lg:px-8 leading-8 text-zinc-800">
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold">
           Let us Connect
        </h1> 
@@ -118,7 +118,7 @@ function Contact() {
           <div className="mt-4 flex justify-center">
             <button 
             type='submit'
-            className='btn btn-outline btn-info text-black font-bold py-2 px-4 rounded'
+            className='btn  text-zinc-400 font-bold py-2 px-4'
             >Connect</button>
           </div>
           </form>
