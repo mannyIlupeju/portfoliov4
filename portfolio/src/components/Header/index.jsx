@@ -24,8 +24,8 @@ function Header() {
     <header className='flex md:flex-row flex-col items-center md:justify-between p-4 container mx-auto'>
       <Image
         src='/3dmannylogob:w2.gif'
-        height={200}
-        width={200}
+        height={400}
+        width={400}
         alt="Manny Ilupeju 3d gif"
         priority
       />
