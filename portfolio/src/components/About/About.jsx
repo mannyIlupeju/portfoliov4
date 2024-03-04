@@ -41,7 +41,7 @@ export default function About() {
             {showSkills && 
                 <div className="flex flex-col gap-7 xl:w-1/2 w-full mt-4">
                   <span>
-                    Languages: HTML, CSS, Javascript, Typescript, Java
+                    Languages: HTML, CSS, Javascript and Java
                   </span>
                   <span>
                     Frameworks & Libraries: React, Typescript, Next, NodeJS, Express, Spring
