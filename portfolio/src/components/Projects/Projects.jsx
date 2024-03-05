@@ -72,7 +72,7 @@ function Projects() {
     ],
     links: [
     {icon:<FaGithub />, 
-     link:'https://github.com/mannyIlupeju/rg-2',
+     link:'https://github.com/mannyIlupeju/frontend',
     },
  
     ]
@@ -98,7 +98,7 @@ function Projects() {
 
 
   return (
-    <div className='translate-y-10 xl:translate-y-24 flex xl:flex-row translate-x-1/5 container xl:mx-0 mx-auto flex-col xl:gap-12 gap-12 mb-24 p-4 lg:w-full text-zinc-800 leading-8'>
+    <div className='translate-y-24 flex xl:flex-row translate-x-1/5 container xl:mx-0 mx-auto flex-col xl:gap-12 gap-12 mb-24 p-4 lg:w-full text-zinc-800 leading-8'>
       <div className='flex-col xl:w-1/2'>
         <h1 className='xl:text-8xl text-6xl'>Projects</h1>
         <div className='text-md my-4'>

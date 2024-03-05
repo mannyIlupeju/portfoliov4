@@ -4,12 +4,14 @@ import Link from 'next/link'
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+import { HiMiniDocumentText } from "react-icons/hi2";
 
 function Header() {
   const [hoverState, setHoverState] = useState({
     linkedin: false,
     twitter: false,
     github: false,
+    resume: false
   });
 
   function handleHover(iconName) {
@@ -22,13 +24,8 @@ function Header() {
 
   return (
     <header className='flex md:flex-row flex-col items-center md:justify-between p-4 container mx-auto'>
-      <Image
-        src='/3dmannylogob:w2.gif'
-        height={400}
-        width={400}
-        alt="Manny Ilupeju 3d gif"
-        priority
-      />
+      <h1 className="font-bold text-4xl text-black">Manny Ilupeju</h1>
+     
       <div className='flex gap-4'>
         <span onMouseEnter={() => handleHover('linkedin')} onMouseLeave={() => removeHover('linkedin')}>
           <a href="https://www.linkedin.com/in/pelumi-ilupeju/" target='_blank' rel="noopener noreferrer">
@@ -43,6 +40,11 @@ function Header() {
         <span onMouseEnter={() => handleHover('github')} onMouseLeave={() => removeHover('github')}>
           <a href="https://github.com/mannyIlupeju" target='_blank' rel="noopener noreferrer">
             <FaGithub size="1.2rem" color={hoverState.github ? '#6164c8' : 'black'}/>
+          </a>
+        </span>
+        <span onMouseEnter={() => handleHover('resume')} onMouseLeave={()=> removeHover('github')}>
+          <a href='https://drive.google.com/file/d/1J1R687_yMc59oq9KlTYaSTEuOtLo8QFH/view?usp=drive_link' target='_blank' rel="noopener noreferrer">
+          <HiMiniDocumentText size="1.2rem" color={hoverState.resume ? '#6164c8' : 'black'}/>
           </a>
         </span>
       </div>

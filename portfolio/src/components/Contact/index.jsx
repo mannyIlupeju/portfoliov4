@@ -39,7 +39,7 @@ function Contact() {
   }
 
   return (
-    <div className="translate-y-8 container mx-auto px-4 sm:px-6 lg:px-8 leading-8 text-zinc-800 mb-24">
+    <div className="translate-y-10 xl:translate-y-12 container mx-auto px-4 sm:px-6 lg:px-8 leading-8 text-zinc-800 mb-24">
         <h1 className="text-center text-2xl text-zinc-800sm:text-3xl md:text-4xl font-bold">
           Let us Connect
        </h1> 
