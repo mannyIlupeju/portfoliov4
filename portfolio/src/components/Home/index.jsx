@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function index() {
   return (
-    <div className="translate-y-10 xl:translate-y-12 xl:p-2 p-4 text-zinc-800">
+    <div className="translate-y-28 xl:translate-y-22 xl:p-2 p-4 text-zinc-800">
       <div className="flex flex-col xl:h-24 h-12 overflow-y-hidden bio">
         <span className="xl:text-8xl text-5xl">Full-Stack Developer</span>
         <span className="xl:text-8xl text-5xl">Problem Solver</span>
