@@ -24,7 +24,9 @@ function Header() {
 
   return (
     <header className='flex md:flex-row flex-col items-center md:justify-between p-4 container mx-auto'>
+      <Link href='/home'>
       <h1 className="font-bold text-4xl text-black">Manny Ilupeju</h1>
+      </Link>
      
       <div className='flex gap-4'>
         <span onMouseEnter={() => handleHover('linkedin')} onMouseLeave={() => removeHover('linkedin')}>
