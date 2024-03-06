@@ -116,7 +116,7 @@ function Projects() {
       <div className='flex flex-col gap-4 justify-center xl:w-2/5'>
         <span className="text-center font-bold">{projects[currentSlide].title}</span>
         <div
-          className='bg-green-300 w-fit rounded-xl overflow-x-hidden relative flex flex-row p-2'
+          className='w-fit rounded-xl overflow-x-hidden relative flex flex-row p-2'
           onMouseEnter={hoverImage}
           onMouseLeave={removeHoverImage}
         >
