@@ -45,7 +45,7 @@ function Header() {
           </a>
         </span>
         <span onMouseEnter={() => handleHover('resume')} onMouseLeave={()=> removeHover('github')}>
-          <a href='https://drive.google.com/file/d/1j4jtYeMs5MGqx-273ZOiKJUyp8G3fbkZ/view?usp=drive_link' target='_blank' rel="noopener noreferrer">
+          <a href='https://drive.google.com/file/d/18bY_QMTq049Ci7sOoVaY9gibyxAqbP6U/view?usp=drive_link' target='_blank' rel="noopener noreferrer">
           <HiMiniDocumentText size="1.2rem" color={hoverState.resume ? '#6164c8' : 'black'}/>
           </a>
         </span>
