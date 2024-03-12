@@ -86,7 +86,46 @@
   }
 }
 
+/* 
+@keyframes arrowMove{
+  0%{
+    transform: translateX(0)
+  } 
+  40% {
+    transform: translateX(8.1em);
+  }
+  80%{
+    transform: scale(2);
+    transform: translateX(8.1em)
+  }
+  100%{
+    transform: scale(2);
+    transform: translateX(8.1em)
+  }
+} */
 
+@keyframes arrowMove {
+  to {
+    transform: translateX(8.1em);
+  }
+}
+
+@keyframes arrowMoveBack{
+  from {
+    transform: translateX(8.1em);
+  } to {
+    transform: translateX(0);
+  }
+}
+
+
+.animate-arrowMove {
+  animation: arrowMove 2s ease-in-out forwards;
+}
+
+.animate-arrowMoveBack {
+  animation: arrowMoveBack 1s ease-in-out forwards;
+}
 
 
 input[type=text],
@@ -187,4 +226,29 @@ textarea {
     padding: 0.4rem; /* Consistent with above, consider if any further adjustments are needed */
     /* Adjust any other properties as needed for smaller screens */
   }
+}
+
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 150ms ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.clicked {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.linkHovered {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #fff;
 }

@@ -1,11 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
 
-function index() {
+function Home() {
+  const [hoveredEffect, setHoveredEffect] = useState('')
+
+  function handleMouseEnter(){
+    setHoveredEffect('animate-arrowMove')
+  }
+
+  function handleMouseLeave(){
+    setHoveredEffect('animate-arrowMoveBack')
+  }
+  
   return (
-    <div className="translate-y-28 xl:translate-y-22 xl:p-2 p-4 text-zinc-800">
+    <div className="translate-y-16 xl:translate-y-22 xl:p-2 p-4 text-zinc-800 h-screen my-22">
       <div className="flex flex-col xl:h-24 h-12 overflow-y-hidden bio">
         <span className="xl:text-8xl text-5xl">Full-Stack Developer</span>
         <span className="xl:text-8xl text-5xl">Problem Solver</span>
@@ -21,7 +31,7 @@ function index() {
       </div>
 
   
-      <div className="relative">
+      <div className="relative z-8">
         <Image 
         src="/view_projects__3_-removebg-preview.png" 
         alt="view projects"
@@ -29,9 +39,15 @@ function index() {
         height={200}
         className="animate-[spin_10s_infinite]"
         />
-        <div className="absolute top-20 translate-x-14 -translate-y-5">
+        <div className="absolute bottom-7 translate-x-14 -translate-y-5">
         <Link href='/project'>
-        <FaArrowRight size="3rem"/>
+        <FaArrowRight 
+        size="4rem"
+        // transform={hoveredEffect ? "scale(2)": ''}
+        className={hoveredEffect}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        />
         </Link>
         </div>
       </div>
@@ -40,4 +56,4 @@ function index() {
   )
 }
 
-export default index
+export default Home

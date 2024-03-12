@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import Cursor from '@/components/Cursor';
 import "@/styles/globals.css";
 
 
@@ -17,5 +18,10 @@ export default function App({ Component, pageProps }) {
     localStorage.setItem('theme', newTheme); // Save theme preference
   }
 
-  return <Component {...pageProps} />
+  return(
+    <>
+    <Cursor/>
+    <Component {...pageProps} />
+    </>
+  )
 }

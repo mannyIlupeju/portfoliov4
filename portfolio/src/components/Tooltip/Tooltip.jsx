@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react'
 
-function Tooltip({children, text}) {
+function Tooltip({children, text, className}) {
   const [showTooltip, setShowTooltip] = useState(false)
   return (
     <div
@@ -11,7 +11,7 @@ function Tooltip({children, text}) {
     >
       {children}
       {showTooltip && (
-        <div className="absolute xl:right-16 xl:top-0 xl:ml-24 -top-10 -right-4 px-2 py-1 bg-black text-white text-xs rounded cursor-pointer">
+        <div className={className}>
           {text}
         </div>
       )}

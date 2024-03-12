@@ -20,7 +20,7 @@ export default function index() {
       <main className="overflow-y-hidden flex-grow container mx-auto">
         <Header />
         <Home/>
-        <div className="absolute z-10 right-0 xl:right-0 xl:top-28 lg:top-28 -bottom-28 xl:bottom-0 lg:w-fit w-full bg-white">
+        <div className="absolute z-10 right-0 xl:right-0 xl:top-28 lg:top-28 -bottom-36 xl:bottom-0 lg:w-fit w-full bg-white">
           <aside className="transform xl:translate-y-40 p-4">
             <Navigation />
           </aside>

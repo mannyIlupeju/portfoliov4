@@ -98,7 +98,7 @@ function Projects() {
 
 
   return (
-    <div className='translate-y-24 flex xl:flex-row translate-x-1/5 container xl:mx-0 mx-auto flex-col xl:gap-12 gap-12 mb-24 p-4 lg:w-full text-zinc-800 leading-8'>
+    <div className='translate-y-24 flex xl:flex-row translate-x-1/5 container xl:mx-0 mx-auto flex-col justify-center xl:gap-12 gap-12 mb-24 p-4 lg:w-full text-zinc-800 leading-8'>
       <div className='flex-col xl:w-1/2'>
         <h1 className='xl:text-8xl text-6xl'>Projects</h1>
         <div className='text-md my-4'>
@@ -113,10 +113,10 @@ function Projects() {
         </div>
       </div>
 
-      <div className='flex flex-col gap-4 justify-center xl:w-2/5'>
+      <div className='flex flex-col gap-4 xl:w-2/5'>
         <span className="text-center font-bold">{projects[currentSlide].title}</span>
         <div
-          className='w-fit rounded-xl overflow-x-hidden relative flex flex-row p-2'
+          className='w-fit rounded-xl overflow-x-hidden relative flex flex-row xl:justify-center p-2'
           onMouseEnter={hoverImage}
           onMouseLeave={removeHoverImage}
         >
