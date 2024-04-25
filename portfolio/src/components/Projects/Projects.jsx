@@ -101,7 +101,7 @@ function Projects() {
     <div className='translate-y-24 flex xl:flex-row translate-x-1/5 container xl:mx-0 mx-auto flex-col justify-center xl:gap-12 gap-12 mb-24 p-4 lg:w-full text-zinc-800 leading-8'>
       <div className='flex-col xl:w-1/2'>
         <h1 className='xl:text-8xl text-6xl'>Projects</h1>
-        <div className='text-md my-4'>
+        <div className='text-md my-4 w-2/2'>
           <p>
             These are projects i have taken on to build my competency with using
             tools and frameworks to solve business and personal problems. The
@@ -132,7 +132,7 @@ function Projects() {
 
           {showDescription && (
             
-            <div className='absolute inset-0 projectImageBackground flex flex-col gap-4 justify-center p-4 opacity-90 overflow-y-hidden'>
+            <div className='absolute inset-0 projectImageBackground flex flex-col xl:gap-4 gap-2 justify-center p-4 opacity-90 overflow-y-hidden'>
              <div className="flex flex-col items-center gap-3 animate-[slideUp_1s_ease-in-out_forwards]">
                 <p className='text-zinc-800 xl:text-md text-sm font-semibold'>
                     {projects[currentSlide].title}
@@ -144,7 +144,7 @@ function Projects() {
                         </div>
                     ))}
                 </div>
-                <p className="xl:w-1/2 text-sm w-full text-center">{projects[currentSlide].description}</p>
+                <p className="xl:w- text-sm w-full text-center">{projects[currentSlide].description}</p>
                 <div className="mt-4 flex gap-2">
                   {projects[currentSlide].links.map((element, key)=>(
                     <div key={key}>

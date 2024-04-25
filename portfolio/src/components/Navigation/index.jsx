@@ -39,7 +39,8 @@ function Navigation() {
             size="1.2rem"
             onMouseEnter={() => handleMouseEnter('home')} 
             onMouseLeave={()=> handleMouseLeave('home')}
-            transform={hoveredState.home ? 'scale(2)' : ''}
+            transform={hoveredState.home ? 'scale(3)' : ''}
+            className="links"
             />
         </Tooltip>
         </Link>
@@ -51,7 +52,8 @@ function Navigation() {
             size="1.2rem"
             onMouseEnter={() => handleMouseEnter('about')} 
              onMouseLeave={()=> handleMouseLeave('about')}
-             transform={hoveredState.about ? 'scale(2)' : ''}
+             transform={hoveredState.about ? 'scale(3)' : ''}
+             className="links"
             />
         </Tooltip>
         </Link>
@@ -63,7 +65,8 @@ function Navigation() {
             size="1.2rem"
             onMouseEnter={() => handleMouseEnter('project')} 
              onMouseLeave={()=> handleMouseLeave('project')}
-             transform={hoveredState.project ? 'scale(2)' : ''}
+             transform={hoveredState.project ? 'scale(3)' : ''}
+             className="links"
             />
         </Tooltip>
         </Link>
@@ -75,7 +78,8 @@ function Navigation() {
              size="1.2rem"
              onMouseEnter={() => handleMouseEnter('contact')} 
              onMouseLeave={()=> handleMouseLeave('contact')}
-             transform={hoveredState.contact ? 'scale(2)' : ''}
+             transform={hoveredState.contact ? 'scale(3)' : ''}
+             className="links"
              />
         </Tooltip>
         </Link>

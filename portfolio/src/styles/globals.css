@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --white: #E8F0FF;
   --accent: #cca5a6;
@@ -20,6 +19,15 @@
   --accent: #F4592F;
 }
 
+
+
+
+.background {
+  background: rgb(52,35,129);
+  background: linear-gradient(156deg, rgba(52,35,129,1) 46%, rgba(14,65,121,0.9990371148459384) 100%);
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+}
 
 
 /*animation**/
@@ -85,24 +93,6 @@
     transform: rotate(360deg);
   }
 }
-
-/* 
-@keyframes arrowMove{
-  0%{
-    transform: translateX(0)
-  } 
-  40% {
-    transform: translateX(8.1em);
-  }
-  80%{
-    transform: scale(2);
-    transform: translateX(8.1em)
-  }
-  100%{
-    transform: scale(2);
-    transform: translateX(8.1em)
-  }
-} */
 
 @keyframes arrowMove {
   to {

@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
+import { useGlobalContext } from '@/context/Context';
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
 
 function Home() {
-  const [hoveredEffect, setHoveredEffect] = useState('')
+  const {hoveredEffect, setHoveredEffect} = useGlobalContext()
 
   function handleMouseEnter(){
     setHoveredEffect('animate-arrowMove')
@@ -15,7 +16,7 @@ function Home() {
   }
   
   return (
-    <div className="translate-y-16 xl:translate-y-22 xl:p-2 p-4 text-zinc-800 h-screen my-22">
+    <div className="translate-y-16 xl:translate-y-22 xl:p-2 p-4 text-zinc-800 h-screen my-22 ">
       <div className="flex flex-col xl:h-24 h-12 overflow-y-hidden bio">
         <span className="xl:text-8xl text-5xl">Full-Stack Developer</span>
         <span className="xl:text-8xl text-5xl">Problem Solver</span>
@@ -31,7 +32,7 @@ function Home() {
       </div>
 
   
-      <div className="relative z-8">
+      <div className="relative z-8 links w-fit">
         <Image 
         src="/view_projects__3_-removebg-preview.png" 
         alt="view projects"
@@ -44,7 +45,7 @@ function Home() {
         <FaArrowRight 
         size="4rem"
         // transform={hoveredEffect ? "scale(2)": ''}
-        className={hoveredEffect}
+        className={`${hoveredEffect}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         />

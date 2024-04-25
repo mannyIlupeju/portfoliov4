@@ -1,10 +1,11 @@
 import {useState, useEffect} from 'react'
 import Cursor from '@/components/Cursor';
+import ContextProvider from '@/context/Context';
 import "@/styles/globals.css";
 
 
 export default function App({ Component, pageProps }) {
-  const [theme, setTheme] = useState('corporate');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -20,8 +21,10 @@ export default function App({ Component, pageProps }) {
 
   return(
     <>
+    <ContextProvider>
     <Cursor/>
     <Component {...pageProps} />
+    </ContextProvider>
     </>
   )
 }

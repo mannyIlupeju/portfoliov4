@@ -6,7 +6,6 @@
   background-color: red;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  cursor:none;
   z-index: 9999;
   transition: all 150ms ease;
 }
@@ -19,7 +18,9 @@
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.linkHovered {
-  transform: translate(-50%, -50%) scale(1.5);
-  background-color: #fff;
+.hovered {
+  transform: translate(-50%, -50%) scale(2);
+  background-color: red;
+  cursor: none;
+  position:fixed;
 }
