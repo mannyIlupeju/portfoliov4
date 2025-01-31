@@ -62,7 +62,7 @@ function Header() {
 
         <Tooltip text="Resume" className="absolute top-8 -left-3 text-black text-xs">
         <span onMouseEnter={() => handleHover('resume')} onMouseLeave={()=> removeHover('resume')} className="links">
-          <a href='https://drive.google.com/file/d/1czbF-Nrz1pEKtjxFtkFB4bSvZiiwS92k/view?usp=drive_link' target='_blank' rel="noopener noreferrer">
+          <a href='https://drive.google.com/file/d/1vpIBrrpZksFVPZsgC4i_mPBrPotby70G/view?usp=sharing' target='_blank' rel="noopener noreferrer">
           <HiMiniDocumentText size="1.2rem" color={hoverState.resume ? '#6164c8' : 'black'} transform={hoverState.resume ? 'scale(3)' : ''}/>
           </a>
         </span>
